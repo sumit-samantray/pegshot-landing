@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Get PegShot support, share product feedback, and submit a rating or testimonial.">
+    <meta name="theme-color" content="#10051f">
+    <title>Support &amp; feedback — PegShot</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="PegShot home">
+        <span class="brand-mark" aria-hidden="true">P</span>
+        <span>PegShot</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="index.html#features">Features</a>
+        <a href="index.html#how-it-works">How it works</a>
+        <a href="index.html#privacy">Privacy</a>
+        <a href="index.html#developer">Developer</a>
+      </nav>
+      <a class="nav-cta" href="https://sumitra10.gumroad.com/l/glunip" target="_blank" rel="noopener noreferrer">Get PegShot</a>
+    </header>
+
+    <main>
+      <section class="support-hero section-shell" aria-labelledby="support-title">
+        <div>
+          <p class="eyebrow"><span></span> PegShot support</p>
+          <h1 id="support-title">Questions welcome.<br><em>Feedback valued.</em></h1>
+          <p>Need a hand, found a rough edge, or love the way PegShot works? Send a private message or leave a rating and a testimonial for consideration.</p>
+          <div class="support-jump-links"><a href="#support">Get support <span aria-hidden="true">↓</span></a><a href="#feedback">Leave feedback <span aria-hidden="true">↓</span></a></div>
+        </div>
+        <div class="support-art" aria-hidden="true">
+          <div class="support-art-shape"><b></b><b></b><b></b><b></b><strong>?</strong></div>
+          <span class="support-art-label label-one">Thoughtful help</span>
+          <span class="support-art-label label-two">Honest feedback</span>
+        </div>
+      </section>
+
+      <section class="form-section section-shell" id="support" aria-labelledby="support-form-title">
+        <div class="form-intro">
+          <p class="eyebrow"><span></span> Support request</p>
+          <h2 id="support-form-title">How can we <em>help?</em></h2>
+          <p>Describe what you were trying to capture and what happened. Include a page URL or extension version if it helps us reproduce the issue.</p>
+          <p class="form-note">Do not include passwords, payment details, license keys, or sensitive capture content.</p>
+        </div>
+        <form class="peg-form" action="https://formspree.io/f/xzezbbkd" method="POST">
+          <input type="hidden" name="_subject" value="New PegShot support request">
+          <input type="hidden" name="_next" value="https://sumit-samantray.github.io/pegshot-landing/thanks.html">
+          <label class="honeypot">Leave this field empty<input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label>
+          <div class="field-row">
+            <label>Your name <span>optional</span><input type="text" name="name" autocomplete="name" placeholder="Your name"></label>
+            <label>Email for a reply <span>optional</span><input type="email" name="email" autocomplete="email" placeholder="you@example.com"></label>
+          </div>
+          <label>What do you need help with?<select name="topic" required><option value="" selected disabled>Select a topic</option><option>Using PegShot</option><option>Something did not work</option><option>License or trial</option><option>Feature idea</option><option>Something else</option></select></label>
+          <label>Your message<textarea name="message" required rows="7" placeholder="Tell us what happened, what you expected, and what browser page you were on."></textarea></label>
+          <div class="field-row">
+            <label>Page URL <span>optional</span><input type="url" name="page_url" placeholder="https://"></label>
+            <label>PegShot version <span>optional</span><input type="text" name="extension_version" placeholder="For example, 1.0.1"></label>
+          </div>
+          <button class="button button-primary" type="submit">Send support request <span aria-hidden="true">→</span></button>
+        </form>
+      </section>
+
+      <section class="form-section feedback-section section-shell" id="feedback" aria-labelledby="feedback-form-title">
+        <div class="form-intro">
+          <p class="eyebrow"><span></span> Rating &amp; testimonial</p>
+          <h2 id="feedback-form-title">Tell us what <em>worked.</em></h2>
+          <p>Your rating and feedback help shape PegShot. If you opt in, a short quote may be considered for the site or Chrome Web Store listing—never published automatically.</p>
+          <p class="form-note">Please keep feedback honest and based on your own experience.</p>
+        </div>
+        <form class="peg-form" action="https://formspree.io/f/xljdeeoe" method="POST">
+          <input type="hidden" name="_subject" value="New PegShot review and testimonial">
+          <input type="hidden" name="_next" value="https://sumit-samantray.github.io/pegshot-landing/thanks.html">
+          <label class="honeypot">Leave this field empty<input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label>
+          <fieldset class="rating-fieldset">
+            <legend>Your PegShot rating <span>required</span></legend>
+            <div class="star-rating" role="radiogroup" aria-label="Your PegShot rating">
+              <input id="star-5" type="radio" name="rating" value="5 stars" required><label for="star-5" title="5 stars">★<span class="sr-only">5 stars</span></label>
+              <input id="star-4" type="radio" name="rating" value="4 stars"><label for="star-4" title="4 stars">★<span class="sr-only">4 stars</span></label>
+              <input id="star-3" type="radio" name="rating" value="3 stars"><label for="star-3" title="3 stars">★<span class="sr-only">3 stars</span></label>
+              <input id="star-2" type="radio" name="rating" value="2 stars"><label for="star-2" title="2 stars">★<span class="sr-only">2 stars</span></label>
+              <input id="star-1" type="radio" name="rating" value="1 star"><label for="star-1" title="1 star">★<span class="sr-only">1 star</span></label>
+            </div>
+          </fieldset>
+          <label>Your feedback<textarea name="feedback" required rows="5" placeholder="What do you like? What could be better?"></textarea></label>
+          <label>A quote we may use <span>optional</span><textarea name="testimonial_quote" rows="3" placeholder="A short testimonial in your own words."></textarea></label>
+          <div class="field-row">
+            <label>Name for attribution <span>optional</span><input type="text" name="name" autocomplete="name" placeholder="Your name"></label>
+            <label>Role or website <span>optional</span><input type="text" name="role_or_website" placeholder="For example, Product designer"></label>
+          </div>
+          <label class="consent"><input type="checkbox" name="testimonial_publish_consent" value="I give PegShot permission to publish my supplied quote and attribution."><span>I give PegShot permission to publish the quote and attribution I supplied. I understand that submitting feedback alone does not make it public.</span></label>
+          <button class="button button-primary" type="submit">Send feedback <span aria-hidden="true">→</span></button>
+        </form>
+      </section>
+
+      <section class="support-faq section-shell" aria-labelledby="faq-title">
+        <p class="eyebrow"><span></span> Before you write</p>
+        <h2 id="faq-title">A few useful checks.</h2>
+        <div>
+          <article><h3>Capture did not start?</h3><p>Reload the tab after updating PegShot, then use the toolbar button or <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>.</p></article>
+          <article><h3>License question?</h3><p>Use the email address you want us to reply to, but never paste your Gumroad license key into a support message.</p></article>
+          <article><h3>Sharing a bug?</h3><p>A short description, page URL, and browser/extension version are more useful than a sensitive screenshot.</p></article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-shell">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">P</span><span>PegShot</span></a>
+      <p>Pin any shape. Capture it clearly.</p>
+      <div><a href="support.html">Support</a><a href="privacy/privacy.html">Privacy</a><a href="https://github.com/sumit-samantray" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+    </footer>
+  </body>
+</html>
