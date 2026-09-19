@@ -8,3 +8,6 @@ h1 { margin: 0; font-size: clamp(30px, 6vw, 42px); letter-spacing: -.04em; }
 h2 { margin: 30px 0 8px; color: #e9d5ff; font-size: 18px; }
 p { margin: 0 0 12px; color: #ddd6fe; font-size: 15px; line-height: 1.65; }
 strong { color: #f5d0fe; }
+a { color: #c4b5fd; }
+a:hover { color: #f5d0fe; }
+.legal-links { display: flex; gap: 18px; margin-top: 28px; font-weight: 700; }
