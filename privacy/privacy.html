@@ -10,7 +10,7 @@
     <main>
       <p class="eyebrow">PegShot</p>
       <h1>Privacy &amp; payment terms</h1>
-      <p class="updated">Last updated: September 16, 2026</p>
+      <p class="updated">Last updated: September 19, 2026</p>
 
       <h2>What PegShot does</h2>
       <p>PegShot captures webpage regions that you actively select. It can create PNGs, PDFs, copied images, and extracted text.</p>
@@ -19,15 +19,20 @@
       <p>Capture images, selected text, OCR processing, PDFs, redactions, and clipboard preparation are processed locally in your browser. PegShot does not send captured webpage content, screenshots, OCR text, or browsing history to the developer, Gumroad, or another analytics service.</p>
       <p>PegShot temporarily keeps a copy result locally in extension storage so you can press Copy. It is removed after a successful copy. You can remove any remaining local extension data through Chrome’s extension settings or by uninstalling PegShot.</p>
 
+      <h2>Account and entitlement information</h2>
+      <p>To start or restore a trial, PegShot asks you to sign in with Google. PegShot sends a Google access token to PegShot’s entitlement service over HTTPS. The service validates the sign-in with Google and stores only a verified Google account identifier, email address, trial timestamps, license status, and account record timestamps. It does not receive webpage captures, screenshots, OCR text, URLs, or browsing history.</p>
+      <p>PegShot stores a cryptographically signed access record locally so ordinary popup and capture checks work without contacting the entitlement service. If this local record is missing, invalid, or expired—for example, after clearing extension data—PegShot asks you to sign in again and restores the access record from the service.</p>
+      <p>PegShot’s use of information received from Google APIs adheres to the Chrome Web Store User Data Policy, including the Limited Use requirements.</p>
+
       <h2>License information</h2>
-      <p>PegShot stores your trial-start timestamp, Pro status, and Gumroad license key locally in Chrome extension storage. When you choose <strong>Verify Key</strong>, PegShot sends your license key and PegShot’s Gumroad product ID to Gumroad’s license-verification API over HTTPS. This verifies access; it does not send your webpage captures or extracted text.</p>
+      <p>When you choose <strong>Verify Key</strong>, PegShot sends your Gumroad license key to PegShot’s entitlement service over HTTPS. The service sends it to Gumroad’s license-verification API over HTTPS, stores only a one-way hash of the key with your account, and returns your access status. This verifies access; it does not send your webpage captures or extracted text to the service or Gumroad.</p>
 
       <h2>Payments</h2>
       <p>PegShot provides a 7-day trial. After the trial, a valid Gumroad license is required for capture features. PegShot’s developer—not Google—is the seller. Payments are completed on Gumroad’s secure checkout page; PegShot does not collect, process, or store card, bank, or other payment details.</p>
       <p>The price, billing type, taxes, refund terms, and other purchase terms shown on Gumroad before you pay govern the purchase. Gumroad’s handling of checkout information is governed by its own privacy policy and terms.</p>
 
       <h2>Sharing and advertising</h2>
-      <p>PegShot does not sell, rent, use, or transfer webpage content or captured data for advertising, profiling, or any purpose unrelated to its screenshot and text-extraction features.</p>
+      <p>PegShot uses Cloudflare to host its entitlement service, Google to authenticate your chosen Google account, and Gumroad to verify a license key that you submit. PegShot does not sell, rent, use, or transfer webpage content or captured data for advertising, profiling, or any purpose unrelated to its screenshot and text-extraction features.</p>
 
       <h2>Support, feedback, and testimonials</h2>
       <p>If you choose to use the PegShot website’s support or feedback forms, the information you enter—such as your name, reply email, message, rating, or testimonial—is sent over HTTPS to Formspree, the form-processing service used by the website. We use this information only to respond to support requests, improve PegShot, and, where you explicitly consent, consider your supplied quote and attribution for publication as a testimonial.</p>
